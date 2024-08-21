@@ -13,21 +13,19 @@
    --link-hover: #f0f0f0;
    --icon-color: #C7C8C9;
 
-
-
 }
 /* TEMA LIGHT*/
-;:root[data-theme='light']{
+:root[data-theme='light']{
    --primary-bg-color:#0D0C09; /* cor principal textos*/
 
-   --primary-bg-color: #f0f2f5; 
-   --secondary-bg-color: #c7c8c9;
+   --primary-bg-color: #f0f2f0f5; 
+   --secondary-bg-color: #C8C7C9;
 
-   --primary-boder-color: #c7c8c9;
-   --secondary-border-color: #9a9a9c;
+   --primary-boder-color: #C7C8C9;
+   --secondary-border-color: #9A9A9C;
 
    --title-color: #0B0B0F;
-   --text-color:#a3a2a2;
+   --text-color:#A3A2A2;
    --link-color: #0b0b0f;
    --icon-color: #56575a; 
 }
@@ -75,6 +73,101 @@ i {
 .header-logo .logo{
    width: 3.25rem;
    height: 3.25rem;
-
 }
 
+.header-logo .logo2 {
+   width: 15rem;
+   height: 2rem;
+   margin-left: 10px;
+   position: relative;
+   bottom: 5px;
+}
+
+html[data-theme='light'] .logo {
+   filter: invert(1);
+}
+
+html[data-theme='light'] .logo2 {
+   filter: invert(1);
+}
+
+#toggleTheme {
+   font-size: 1.5rem; 
+   color: var(--icon-color);
+   cursor: pointer;
+   transition: ease-in-out .4s;
+}
+
+.menu {
+   display: flex;
+   /* Torna o Elemento um Flex contanier automaticamente transformando todos os filhos direitos em Flex Itens*/
+   align-items: center;
+   background: var(--primary-bg-color);
+   gap: 1rem;
+}
+
+.menu-link {
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+}
+
+.menu-mobile { /* UL */
+   width: 100%; 
+   position: fixed;
+   bottom: 0;
+   justify-content: space-between;
+   border-top: 1px solid var(--primary-boder-color);
+}
+
+.menu-mobile .menu-link {
+   flex-direction: column;
+   justify-content: center;
+   padding: 0.5rem 1rem;
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text, 
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
+   color: var(--link-hover);
+}
+
+.menu-icon, .menu-text {
+   color: var(--link-color);
+   font-weight: 600;
+}
+
+.menu-icon {
+   font-size: 1.5rem;
+}
+
+.menu-text {
+   font-size: .75rem;
+   text-transform: uppercase;
+}
+
+.header-nav {
+   display: none;
+}
+
+.menu-principal {
+   gap: 1rem;
+}
+
+/*---------------------*/
+
+/* CSS Responsivo*/
+@media (min-width: 768px) {
+   .header {
+      position: fixed;
+      border-bottom: 1px solid var(--primary-boder-color);
+      padding: 1rem 6rem;
+   }
+   .nav-mobile {
+      display: none;
+   }
+   .header-nav {
+      display: flex;
+   }
+}

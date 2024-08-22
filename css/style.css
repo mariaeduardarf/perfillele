@@ -1,6 +1,6 @@
 /* Variaveis de Cores*/
 :root, :root[data-theme='dark'] {
-   --primary-color:  #f0f0f0; /*cor principal texto*/
+   --primary-color:  #707070; /*cor principal texto*/
    --primary-bg-color: #171511; /*cor principal fundo*/
    /*bg = background == cor de Fundo*/
    --secondary-bg-color: #28292E;
@@ -192,6 +192,19 @@ html[data-theme='light'] .logo2 {
 .btn-primary span {
    color: var(--primary-color);
 }
+
+#home {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.main-content {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+
 
 /*---------------------*/
 

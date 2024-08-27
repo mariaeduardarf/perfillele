@@ -1,6 +1,6 @@
 /* Variaveis de Cores*/
 :root, :root[data-theme='dark'] {
-   --primary-color:  #707070; /*cor principal texto*/
+   --primary-color:  #858585; /*cor principal texto*/
    --primary-bg-color: #171511; /*cor principal fundo*/
    /*bg = background == cor de Fundo*/
    --secondary-bg-color: #28292E;
@@ -204,6 +204,17 @@ html[data-theme='light'] .logo2 {
    flex-direction: column;
    gap: 1.5rem;
 }
+
+.video iframe{
+   width: 100%;
+   aspect-ratio: 16/9;
+}
+
+#home, .projetos, .sobre, .contato {
+   padding: 7rem 5rem;
+}
+
+
 
 
 /*---------------------*/

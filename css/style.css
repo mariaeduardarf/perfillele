@@ -412,6 +412,15 @@ html[data-theme='light'] .logo2 {
     text-transform: uppercase;
 }
 /* Roda Pé = Footer */
+footer {
+    margin-bottom: 5rem;
+}
+footer p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
 
 
 
